@@ -16,7 +16,7 @@ func TestUse(t *testing.T) {
 	testUser := &user.User{Doer: mockDoer}
 
 	// Expectt Do to be called once with 123 and "Hello GoMock" as parameters, and return nil from the mocked call.
-	mockDoer.EXPECT().DoSomething(123, "Hello GoMock").Return(nil).Times(1)
+	mockDoer.EXPECT().DoSomething(1989, "Hello RBT").Return(nil).Times(1)
 
 	testUser.Use()
 }
